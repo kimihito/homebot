@@ -31,16 +31,13 @@ d = datetime.datetime.today()
 for i in range(1,5):
   if d.hour >= 6 and d.hour < 12:
     str = '@' + follower[i] + 'ちゃん、朝からえらいえらい！'
-    print str
-    #api.update_status(str)
+    api.update_status(str)
   elif d.hour >= 12 and d.hour < 20:
     str = '@' + follower[i] + 'ちゃん、お昼もえらいえらーい！'
-    print str
-    #api.update_status(str)
+    api.update_status(str)
   else:
     str = '@' + follower[i] + 'ちゃん、夜になってもえらいえらーい！'
-    print str
-    #api.update_status(str)
+    api.update_status(str)
   
   
 
